@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment News Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>News Summarizer with Sentiment Analysis</h1>
+        <textarea id="newsInput" placeholder="Paste your news article here..."></textarea>
+        <button onclick="processText()">Summarize & Analyze</button>
+        <div id="output">
+            <h3>Summary:</h3>
+            <p id="summaryText"></p>
+            <h3>Sentiment:</h3>
+            <p id="sentimentText"></p>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
